@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DearDost</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lemon&family=Roboto:wght@100;300;400&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <section class="top-nav">
+        <div>
+          <img src="img/logo (2).png" alt="" class="logo">
+          
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+          <div class='menu-button'></div>
+        </label>
+        <ul class="menu">
+          <li>Home</li>
+          <li>Contact-Us</li>
+          <li>Login</li>
+          <li>Create Account</li>
+        </ul>
+        <img src="img/moon.png" alt="" id="element">
+      
+      </section>
+      <div class="header-text">
+        <h1>7 Confessions <br>about you</h1>
+        <h3>Send Dare To Your Friends</h3>
+        <div class="hero">
+          <img src="img/img.png" alt="">
+        </div>
+        <input type="text" placeholder="Enter your name">
+        <br>
+        <button>Creat Dare</button>
+      </div>
+    </div>
+  </div>
+  <section class="detail-box">
+    
+    <div class="card-rounded">
+      <h1>Friendship Dare 2024 : 7 confessions challenge!</h1>
+      <details>
+        <summary>Tutorial</summary>
+        <ul>
+          <li>Enter your name to create your Link</li>
+          <li>
+            Share your link on all your social media accounts (WhatsApp,
+            Instagram DM etc.)
+          </li>
+          <li>Your Friends will answer the dare.</li>
+          <li>You can check all the answers to your dare here-</li>
+        </ul>
+        <div class="question-footer2">
+          <a href="/result" style="color: white">Check Result</a>
+        </div>
+      </details>
+      <p>
+        7 confessions about you is a social game that helps you reminisce
+        about your friendship with another person 🎉
+      </p>
+      <p>
+        <em>When you sign-up, we create a link for you 🔗 </em><br />This
+        link contains <strong>7 dare questions</strong> that your friends
+        must answer to complete the dare 😊
+      </p>
+      <p>Each question is <strong>personal and meaningful.</strong></p>
+      <p>
+        The questions will make you <strong>nostalgic</strong> about how you
+        met, and help you understand each other better. In the last
+        question, your friends can say whatever they want to say -
+        <em>it might be shocking or funny</em> 🤣
+      </p>
+      <p>
+        <strong>In some sense - it is like a friendship challenge 💪</strong>
+        You ask your friends to look inside themselves and reveal their
+        innermost thoughts.
+      </p>
+      <p>
+        It's not just a quiz, but also an <em>emotional experience</em>,
+        where you can see how truly your friends think about you.
+      </p>
+      <p>It is simple to send this dare:</p>
+      <ol>
+        <li>You enter your name above ( include any emoji you want 😁)</li>
+        <li>We create a new friendship dare link for you 🔗</li>
+        <li>
+          Share the link to all the social media sites you want 📢 <br />
+          <small><em>Popular places are - Whatsapp Story, Instagram Bio, Snapchat,
+              Facebook Story, TikTok Bio. Some people even share the link on
+              quora</em></small>😂
+        </li>
+        <li>
+          Click the <span class="pill">Check Dare Results</span> button to
+          see what your friends (and BFF) wrote.
+        </li>
+        <li>
+          MOST IMPORTANT: take a screenshot of all the answers you received
+          and post it on your favourite social media. Doing this will 10x
+          the fun, trust us 😉
+        </li>
+      </ol>
+      <p>
+        <strong>Don't wait, scroll up and let's start the experience 😎</strong>
+      </p>
+    </div>
+    </div>
+  </section>
+
+  </div>
+  <!-- Copyright -->
+  <div class="copyright">
+    <div class="social-icons">
+      <a href="https://facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
+      <a href="https://www.instagram.com/saloniraghuvanshi_/"><i class="fa-brands fa-square-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/saloni-singh-raghuvanshi-417b0b1a9"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://twitter.com/SaloniSinghRag1"><i class="fa-brands fa-square-twitter"></i></a>
+    </div>
+    <div class="footer-links">
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms and Conditions</a></li>
+        <li><a href="#">Disclaimer</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    <p>Icons made by
+      Eucalyp
+      from
+      www.flaticon.com
+      © 2023 Copyright: DearDost.com</p>
+  </div>
+
+  <!-- Javascript -->
+ 
+  <script>
+    var element = document.getElementById("element");
+    element.onclick = function () {
+      document.body.classList.toggle("dark-mode");
+      if (document.body.classList.toggle.contains("dark-mode")) {
+        element.src = "img/sun.png";
+      } else {
+        element.src = "img/moon.png";
+      }
+    }
+  </script>
+  <script src="https://kit.fontawesome.com/3f4e5c6e39.js" crossorigin="anonymous"></script>
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links li");
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("open");
+  links.forEach(link => {
+    link.classList.toggle("fade");
+  });
+});
+
+  </script>
+</body>
+
+</html>
